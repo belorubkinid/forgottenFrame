@@ -4,8 +4,7 @@
   "description": "forgotten frame game server",
   "main": "app.js",
   "scripts": {
-    "init": "npx sequelize db:create && npx sequelize db:migrate",
-    "dataRecorder": "node dataRecorder.js",
+    "init": "npx sequelize db:create && npx sequelize db:migrate && node dataRecorder.js",
     "start": "pm2 start app.js",
     "dev": "nodemon app.js"
   },

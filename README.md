@@ -14,7 +14,6 @@ JavaScript
    * cd server
    * npm i
    * npm run init
-   * npm run dataRecorder
    * npm run dev
 * **client** - frontend. 
    * cd client 
