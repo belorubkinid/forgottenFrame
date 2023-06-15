@@ -1,0 +1,24 @@
+.hovering:hover {
+  background-color: white;
+}
+
+.otherAnswer {
+  background-color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+
+.rightAnswer {
+  background-color: greenyellow;
+  pointer-events: none;
+}
+
+.wrongAnswer {
+  background-color: red;
+  pointer-events: none;
+}
+
+@media (max-width: 979px) {
+  .hovering:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}

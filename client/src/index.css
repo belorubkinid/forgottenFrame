@@ -1,0 +1,307 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100%;
+  min-width: 100%;background-position: center;
+  background-image: url('../public/background.png');
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  max-height: 64px;
+}
+
+main {
+  min-height: calc(100vh - 128px);
+}
+
+nav {
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 64px;
+}
+
+nav ul a {
+  max-height: 64px;
+  font-size: large;
+  padding-top: 5px;
+}
+
+li a img {
+  margin-top: 15px;
+  filter: invert(100%);
+  max-height: 30px;
+}
+
+.brand-logo {
+  filter: invert(100%);
+}
+
+.conteiner {
+  max-width: 80%;
+  max-height: 80%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.card-action {
+  padding: 0px;
+  margin-top: 2px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2fr 2fr;
+}
+
+.answer {
+  padding: 0px;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  user-select: none;
+  font-size: 23px;
+  font-weight: bold;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+.card.large {
+  margin: 0px;
+  height: 65vw;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+div.row {
+  width: inherit;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+input:-webkit-autofill { 
+  -webkit-background-clip: text;
+}
+
+.input-field>label {
+  color: rgb(0, 0, 0);
+  font-size: large;
+}
+
+input[type=text]:not(.browser-default), input[type=password]:not(.browser-default) {
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 3px solid yellow;
+  box-shadow: none;
+}
+
+input[type=text]:not(.browser-default) {
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+  font-weight: bold;
+}
+
+input.valid[type=text]:not(.browser-default), input.valid[type=password]:not(.browser-default) {
+  border-bottom: 3px solid yellowgreen;
+}
+
+.btn {
+  color: #fff;
+  font-weight: bold;
+  background-color: #000000;
+}
+
+.btn:hover {
+  background-color: yellowgreen;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.black-text {
+  font-size: x-large;
+}
+
+.ratingTable {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table {
+  border: none;
+}
+
+th {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px dashed rgb(0, 0, 0);
+  padding: 5px;
+}
+
+td {
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+}
+
+tr:hover td {
+  background: rgb(255, 255, 255);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 64px;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  min-height: 100%;
+}
+
+.progress {
+  margin: 0px;
+  height: 15px;
+  background-color: white;
+}
+
+nav div.brand-logo.center {
+  width: 400px;
+  height: 64px;
+  background-image: url('../public/fullLogo.png');
+}
+
+.gameConteiner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  padding-top: 65px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: x-large;
+  font-weight: bolder;
+  text-align: center;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn-floating {
+  display: block;
+  border-radius: 15%;
+}
+
+.btn-floating.btn-large {
+  width: 180px;
+  margin: 20px;
+}
+
+.row.conteiner h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.toast {
+  font-weight: bold;
+  background-color: rgba(255, 0, 0);
+}
+
+.noLink {
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 980px) {
+  .row .col.m12 {
+    margin: 0px;
+    max-width: fit-content;
+  }
+
+  .card.large {
+    height: 65vh;
+    width: 95vh;
+  }
+  .card-action {
+    width: 95vh;
+  }
+
+  .conteiner {
+    width: fit-content;
+    max-width: 95vh;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  nav div.brand-logo.left {
+    width: 380px;
+    height: 64px;
+    background-image: url('../public/fullLogo.png');
+  }
+}
+
+@media (max-width: 767px ) {
+  .card-action {
+    display: block;
+  }
+  .answer {
+    font-size: large;
+  }
+
+  nav div.brand-logo.left {
+    width: 50px;
+    height: 50px;
+    margin: 7px;
+    background-image: url('../public/smallLogo.png');
+    background-size: contain;
+    transform: scale(-1, 1);
+  }
+  .conteiner {
+    max-width: 95%;
+  }
+  .row.conteiner h3 {
+  font-size: xx-large;
+  }
+  .card.large {
+    margin-bottom: 0px;
+    height: 80vw;
+  }
+
+  li a img {
+    margin-top: 12px;
+  }
+}

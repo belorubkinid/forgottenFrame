@@ -1,0 +1,23 @@
+# Forgotten frame - web-приложение викторины для киноманов
+
+## Стек технологий:
+JavaScript
+
+**Frontend**: React, Redux, Saga, HTML, CSS
+
+**Backend**: Node.js, Express, Bcrypt, Cors
+
+**Database**: PostgreSQL, Sequelize ORM
+
+### Установка:
+* **server** - backend. 
+   * cd server
+   * npm i
+   * npm run init
+   * npm run dataRecorder
+   * npm run dev
+* **client** - frontend. 
+   * cd client 
+   * npm i
+   * npm start
+  
